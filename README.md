@@ -13,6 +13,8 @@
 
 ## 5. we need to enable API access for your account.
    > you can search the API using Platform search bar **Cloud SQL Admin API**. you have enable this API service to access the DATABASE.
+    
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/API.JPG)
 ## 6. Last we need to create  server account to access the services with secure and authenticate credentials by Creating **Service Account** for SQL admin access. 
    > IAM & Admin > service Accounts > 
     >Create Service Account
