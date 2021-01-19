@@ -1,5 +1,7 @@
-package com.sada.SpringCloudGCPCloud.SQLDB;
+package com.sada.SpringCloudGCPCloud.SQLDB.controller;
 
+import com.sada.SpringCloudGCPCloud.SQLDB.model.Product;
+import com.sada.SpringCloudGCPCloud.SQLDB.repository.ProductRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.sada.SpringCloudGCPCloud.SQLDB;
+package com.sada.SpringCloudGCPCloud.SQLDB.model;
 
 
 import javax.persistence.Entity;
