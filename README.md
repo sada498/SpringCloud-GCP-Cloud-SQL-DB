@@ -5,9 +5,10 @@
 ## 1. You can utilize the Google cloud free tier or you can use your gcloud to get access.
   [Google cloud free tier](https://cloud.google.com/free)
 ## 2. Once you active your account you can create new project or use existing project.
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/New%20Project.JPG)
 
 ## 3. you need to create SQL instance.
-### 3.1 **you can use search bar or menu to find the SQL**
+  > **you can use search bar or menu to find the SQL**
 ## 4. It might take while to configure the instance.
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/instance.JPG)
 ## 5. we need to enable API access for your account.
