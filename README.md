@@ -2,15 +2,14 @@
 
 #Google Cloud Configuration for the project
 
-## 1. You can utlize the free Google cloud tire or you can your gcloud to get access.
-
-   ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/tree/main/img/New Project.JPG)
+## 1. You can utilize the Google cloud free tier or you can use your gcloud to get access.
+  [Google cloud free tier](https://cloud.google.com/free)
 ## 2. Once you active your account you can create new project or use existing project.
 
 ## 3. you need to create SQL instance.
    > you can use search bar or menu to find the SQL
 ## 4. It might take while to configure the instance.
-
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/instance.JPG)
 ## 5. we need to enable API access for your account.
    > you can search the API using Platform search bar **Cloud SQL Admin API**. you have enable this API service to access the DATABASE.
     
@@ -18,9 +17,13 @@
 ## 6. Last we need to create  server account to access the services with secure and authenticate credentials by Creating **Service Account** for SQL admin access. 
    > IAM & Admin > service Accounts > 
     >Create Service Account
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/service%20account.JPG)
     > assign access permission as SQL admin
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/access%20permision.JPG)
     > create a key
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/key.JPG)
     >Json ( we need to add the path of the location to Project application.properties file)
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/json.JPG)
 
 # Application configuration to access the Gcloud
     #Project name in Gcloud
@@ -39,9 +42,9 @@
   > once you configure the all the details in application.properties file.
 ## Start the application 
     mvn spring-boot:run 
-   > Once the application running without problems.You send **Post** request by using postman.
-## Postman 
 
+## Once the application running without problems.You send **Post** request by using Postman 
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/postman.JPG)
 ## After sending the Post request you can check the Database table in by using Gcloud shell.
    > SQL > Click on your instance > connect using cloud shell 
 
@@ -57,6 +60,7 @@
    > Check the data added to table or not
 
     select * from product;
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/Gcloud%20Table%20check.JPG)
 # OR you can write simple test case to get the data from Gcloud DB table.
     @Test
     	public void testProduct(){
@@ -68,6 +72,7 @@
     			System.out.println("Warehouse:   "+   product.getWarehouse());
     			System.out.println("-------------------------------------");
     		} 
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/test%20result.JPG)
  > Done :)
     
 
