@@ -1,28 +1,33 @@
 # SpringCloud_GCP_Cloud-SQL-DB
 
-#Google Cloud Configuration for the project
+# Google Cloud Configuration for the project
 
 ## 1. You can utilize the Google cloud free tier or you can use your gcloud to get access.
   [Google cloud free tier](https://cloud.google.com/free)
 ## 2. Once you active your account you can create new project or use existing project.
+![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/New%20Project.JPG)
 
 ## 3. you need to create SQL instance.
-   > you can use search bar or menu to find the SQL
+  > **you can use search bar or menu to find the SQL**
 ## 4. It might take while to configure the instance.
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/instance.JPG)
 ## 5. we need to enable API access for your account.
-   > you can search the API using Platform search bar **Cloud SQL Admin API**. you have enable this API service to access the DATABASE.
+### 5.1 **you can search the API using Platform search bar **Cloud SQL Admin API**. you have enable this API service to access the DATABASE.**
     
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/API.JPG)
 ## 6. Last we need to create  server account to access the services with secure and authenticate credentials by Creating **Service Account** for SQL admin access. 
-   > IAM & Admin > service Accounts > 
-    >Create Service Account
+###  6.1 **IAM & Admin > service Accounts >** 
+###  6.2 **Create Service Account**
+    
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/service%20account.JPG)
-    > assign access permission as SQL admin
+###  6.3 **assign access permission as SQL admin**
+    
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/access%20permision.JPG)
-    > create a key
+###  6.4 **create a key**
+    
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/key.JPG)
-    >Json ( we need to add the path of the location to Project application.properties file)
+###  6.5 **Json ( we need to add the path of the location to Project application.properties file)**
+    
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/json.JPG)
 
 # Application configuration to access the Gcloud
@@ -46,18 +51,19 @@
 ## Once the application running without problems.You send **Post** request by using Postman 
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/postman.JPG)
 ## After sending the Post request you can check the Database table in by using Gcloud shell.
-   > SQL > Click on your instance > connect using cloud shell 
+### **SQL > Click on your instance > connect using cloud shell**
 
      gcloud sql connect sada-postgresql-instance --user=postgres --quiet
-   > Enter your password
-   > To access the postgres db 
+### **Enter your password**
+### **To access the postgres db** 
 
       \c postgres
-   > Enter your password 
-   > To see the list of tables in DB.
+### **Enter your password **
+   
+### **To see the list of tables in DB.**
 
        \dt
-   > Check the data added to table or not
+### **Check the data added to table or not**
 
     select * from product;
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/Gcloud%20Table%20check.JPG)
@@ -73,7 +79,7 @@
     			System.out.println("-------------------------------------");
     		} 
 ![](https://github.com/sada498/SpringCloud-GCP-Cloud-SQL-DB/blob/main/img/test%20result.JPG)
- > Done :)
+### **Done :)**
     
 
     
